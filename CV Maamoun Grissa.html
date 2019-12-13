@@ -8,6 +8,7 @@
     <title>CV Maamoun Grissa</title>
     <script src="https://kit.fontawesome.com/a661f852b0.js"></script>
     <!-- <link rel="stylesheet" href="style.css"> -->
+
     <style>
         * {
             margin: 0;
@@ -383,19 +384,58 @@
             background-image: url(https://i.imgur.com/V34HXbm.png);
         }
 
-        .container article .refr p {
+        .container article .refr .exampls p {
             text-align: center;
             margin: 10px 0;
         }
 
-        .container article .refr .ref a {
-            width: 20%;
+        .container article .refr .exampls a {
             margin: 2%;
         }
 
-        .container article .refr .ref a img {
+        .container article .refr .exampls a img {
             width: 100%;
             height: 100%;
+        }
+
+        .container article .refr .exampls .wordpress-sites {
+            width: 75%;
+        }
+
+        .container article .refr .exampls .wordpress-sites .ref a {
+            width: 20%;
+        }
+
+        .container article .refr .exampls .v-hr {
+            width: 5%;
+            height: 50px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            margin-top: 5%;
+        }
+
+        .container article .refr .exampls .v-hr span {
+            width: 2px;
+            height: 100%;
+            background-color: #CCC;
+            display: block;
+        }
+
+        .container article .refr .exampls .from-scratch {
+            width: 20%;
+        }
+
+        .container article .refr .exampls .from-scratch a {
+            display: block;
+            width: 70%;
+            margin: 20px auto;
         }
 
         footer {
@@ -483,6 +523,8 @@
             background-color: #cb2027;
             display: block;
         }
+
+        /*# sourceMappingURL=style.css.map */
     </style>
 
 </head>
@@ -686,18 +728,32 @@
                     <h2 id="references">Work examples</h2>
                 </div>
                 <div class="hr"><span></span></div>
-                <p id="ref-text">Wordpress Sites</p>
-                <div class="ref flex center-flex">
-                    <a href="http://xn--80aaaocricp2asm.xn--p1ai/" target="_blank"><img
-                            src="https://i.imgur.com/3lEBgYm.jpg" alt="Ref1" title="АЙ ДА ПРАЗДНИК"></a>
-                    <a href="http://food-garmony.ru/" target="_blank"><img src="https://i.imgur.com/IZICC1F.jpg"
-                            alt="Ref2" title="ТОФУ ОПТОМ"></a>
-                    <a href="http://xn--80aaxqdjoocak8g.xn--p1ai/" target="_blank"><img
-                            src="https://i.imgur.com/S5wgIHq.jpg" alt="Ref3" title="АртеВивре"></a>
-                    <a href="http://bahitgul.com/" target="_blank"><img src="https://i.imgur.com/uh1xPgB.jpg" alt="Ref4"
-                            title="Bahitgul"></a>
+                <div class="flex exampls">
+                    <div class="wordpress-sites">
+                        <p id="ref-text">Wordpress Sites</p>
+                        <div class="ref flex center-flex">
+                            <a href="http://xn--80aaaocricp2asm.xn--p1ai/" target="_blank"><img
+                                    src="https://i.imgur.com/3lEBgYm.jpg" alt="Ref1" title="АЙ ДА ПРАЗДНИК"></a>
+                            <a href="http://food-garmony.ru/" target="_blank"><img src="https://i.imgur.com/IZICC1F.jpg"
+                                    alt="Ref2" title="ТОФУ ОПТОМ"></a>
+                            <a href="http://xn--80aaxqdjoocak8g.xn--p1ai/" target="_blank"><img
+                                    src="https://i.imgur.com/S5wgIHq.jpg" alt="Ref3" title="АртеВивре"></a>
+                            <a href="http://bahitgul.com/" target="_blank"><img src="https://i.imgur.com/uh1xPgB.jpg"
+                                    alt="Ref4" title="Bahitgul"></a>
+                            <a href="https://les-center.ru" target="_blank"><img src="https://i.imgur.com/nrSqQwL.jpg"
+                                    alt="Ref5" title="Les-Center"></a>
 
+                        </div>
+                    </div>
+                    <div class="v-hr"><span></span></div>
+                    <div class="from-scratch">
+                        <p id="from-scratch">From Scratch</p>
+                        <a href="http://www.aidaprazdnik-dedmoroz.ru/" target="_blank"><img
+                                src="https://i.imgur.com/IGT7xXE.jpg" alt="Ref6" title="Aidapraznik"></a>
+                    </div>
                 </div>
+
+
             </section>
         </article>
         <div class="clear"></div>
@@ -770,6 +826,8 @@
                             document.getElementById("git").innerHTML = "Rejoindre s'il vous plaît mon github pour voir tous mes projets <br><br>"
                             document.getElementById("references").textContent = "Exemples de travail";
                             document.getElementById("ref-text").textContent = "Sites Web créés avec Wordpress";
+                            document.getElementById("from-scratch").textContent = "À partir de zéro";
+                            
                             break;
                         case "RU":
                             leftToRight();
@@ -823,6 +881,8 @@
                             document.getElementById("git").innerHTML = "Присоединяйтесь, пожалуйста, мой GitHub, чтобы увидеть все мои проекты <br><br>"
                             document.getElementById("references").textContent = "Примеры работ";
                             document.getElementById("ref-text").textContent = "Сайты, созданные на Wordpress";
+                            document.getElementById("from-scratch").textContent = "с нуля";
+                            
                             break;
                         case "AR":
                             rightToLeft();
@@ -877,7 +937,8 @@
                             document.getElementById("git").innerHTML = " يمكنك تصفح جميع مشاريعي المنجزة في حسابي الخاص بجيت هاب<br><br>"
                             document.getElementById("references").textContent = "أمثلة عن الأعمال";
                             document.getElementById("ref-text").innerHTML = " مواقع انترنات منجزة بـ <span style='direction: ltr;'> CMS Worpress</span>";
-
+                            document.getElementById("from-scratch").textContent = "من الصفر";
+                            
                             break;
                         default:
                             document.location.reload();
